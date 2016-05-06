@@ -15,7 +15,7 @@
 }
 
 .green {
-    background-color: #00ff44;
+    background-color: #ff1b2e;
 }
 
 .icon-menu {
@@ -73,11 +73,28 @@ body {
     position: absolute;
 }
 
-.item {
-    align-content: right;
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-#liberty{
-    font-weight: bold;
-    color: #0f0f0f;
+
+#carousel-cell{
+    width: 60%;
+    height: 150px;
+    margin-right: 20px;
+    background: #090a09;
+    counter-increment: carousel-cell;
+}
+
+.carousel-cell:before {
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+    display: block;
+}
+
+img {
+    padding-right: 1400px;
 }
